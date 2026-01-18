@@ -38,5 +38,5 @@ buf2[1]=0x4A; // replace e with J
 console.log(buf2.toString());
 
 //concat buffer 
-const merged =Buffer.concat([buf1,buf2]);
+const merged =Buffer.concat([buf1,buf2]);// input given as the array 
 console.log(merged.toString());
