@@ -36,8 +36,16 @@ send custom header surya - suryansh
 # setup POST Route to add a new book
 
 1. use middleware to parse the body from request using app.use(express.json());
-2. define POST route
-3. Get book Data
+2. define POST route and get title and author from body
+3. validation to check for title and author 
 4. generate new id for book
-5. add book to arrya
+5. create new book and add to array
 6. send a successs response
+
+# delete route for books 
+
+1. define delet e route app.delete('/books/:id')
+2. get id of book from parameter and convert it to ineger
+3. handle bad request : if id NaN check uisng is NaN
+4. find the book and remove the book using .findIndex and splice method or using filter()
+5. if not found the handle throught 404 response 
