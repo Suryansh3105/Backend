@@ -1,1 +1,3 @@
 express/node_modules/
+relationalDB/node_modules/
+relationalDB/.env

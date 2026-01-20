@@ -33,7 +33,7 @@ app.get('/contact-us',(req,res)=>{
 app.post('/tweet',(req,res)=>{
     res.status(201).end("DB operation compelted");
 })
-app.get('/tweet',(req,res)=>{
-    res.json(tweets);
+app.get('/tw eet',(req,res)=>{
+    res.json(tweets); // note to send json resopnse use res.json() not variableName.json() as this function dosent exit 
 })
 
