@@ -1,3 +1,5 @@
 express/node_modules/
 relationalDB/node_modules/
 relationalDB/.env
+express/bookStore/node_modules/
+express/bookStore/.env

@@ -39,7 +39,7 @@ const config = defineConfig({
 use command npx drizzle-kit push
 
 7. fake data to Seed and Query the database
-require('dotenv/config) // to require superpower of dotenv and config to search for .env file and read the data in it at the start of the file 
+require('dotenv/config) // to require superpower of dotenv and config to search for .env file and read the data in it at the start of the file note this only required once in the main file starting point of the app
 in index.js file in root folder note this is separate index.js file that of src 
 
 8. run the index.js to check if all things are working as expected 
