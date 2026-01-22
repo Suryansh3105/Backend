@@ -2,6 +2,7 @@
 const booksTable = require('../models/books.model.js');
 const db = require('../db');
 const {eq,sql} = require('drizzle-orm');
+const authorTable = require('../models/author.model.js');
 
 
 
@@ -22,7 +23,7 @@ async function findBookByID (req,res) {
     // if(isNaN(id)){ // NaN is the only value in JS that is not equal to itself. so id==NaN will not work and always give false therefore use isNaN() 
     //     return res.status(400).json({errro:`enter id in numbers`});
     // }
-    const book = await db.select().from(booksTable).where(eq(booksTable.id,id));//books.find((e)=>e.id===id); // .find() is method in array to search and return one item(fist match) if codnition is true it take a callback function that take array on which the searching is to be performed if not found it return undefined //SELECT * from books where id = {id}
+    const book = await db.select().from(booksTable).where(eq(booksTable.id,id)).leftJoin(authorTable,eq(booksTable.authorID,authorTable.id));//books.find((e)=>e.id===id); // .find() is method in array to search and return one item(fist match) if codnition is true it take a callback function that take array on which the searching is to be performed if not found it return undefined //SELECT * from books where id = {id}
     console.log(book);
     console.log(`id: ${id}`);
     if(book.length===0){

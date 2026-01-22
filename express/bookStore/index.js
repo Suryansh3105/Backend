@@ -2,6 +2,7 @@ require('dotenv/config');
 const express=require('express');
 const {myLogger}=require('./middlewares/logger.js');
 const bookRouter = require('./Routes/book.route.js');
+const authorRouter = require('./Routes/author.route.js');
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use(express.json()); // but her used () before express.json is factory middl
 
 // Routes
  app.use('/books',bookRouter);
+ app.use('/authors',authorRouter);
 
 
 app.listen(PORT,()=>{
