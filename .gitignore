@@ -1,5 +1,8 @@
 express/node_modules/
 relationalDB/node_modules/
 relationalDB/.env
+auth/sessionAuth/.env
 express/bookStore/node_modules/
 express/bookStore/.env
+auth/sessionAuth/node_modules
+
