@@ -4,7 +4,10 @@
   "description": "1. folder for bookstore project \r 2. initialize npm \r 3. install devdependencies and dependencies\r 4. create index.js file and step as entry point and define script for running it",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",
+    "db:push": "drizzle-kit push",
+    "db:studio":"drizzle-kit studio"
   },
   "keywords": [],
   "author": "",

@@ -6,4 +6,6 @@ express/bookStore/node_modules/
 express/bookStore/.env
 auth/sessionAuth/node_modules
 learningDocker/node_modules
+urlShortner/node_modules
+urlShortner/.env
 

@@ -1,0 +1,15 @@
+name: url-Shortner
+services:
+  db:
+    image: postgres:17.4
+    restart: always
+    environment:
+      POSTGRES_USER: Surya
+      POSTGRES_PASSWORD: mydb
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data_urlShortner:/var/lib/postgresql/data
+volumes:
+  db_data_urlShortner:

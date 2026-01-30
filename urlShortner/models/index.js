@@ -1,0 +1,1 @@
+export {exampleTable} from './schema.js'
