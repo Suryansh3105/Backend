@@ -8,4 +8,9 @@ auth/sessionAuth/node_modules
 learningDocker/node_modules
 urlShortner/node_modules
 urlShortner/.env
+auth/jwtAuth/node_modules
+auth/jwtAuth/.env
+typescript/node_modules
+typescript/dist
+
 
